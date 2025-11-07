@@ -1,0 +1,16 @@
+{
+  "name": "agent-runner",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/runner.js"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "viem": "^2.38.6"
+  }
+}
