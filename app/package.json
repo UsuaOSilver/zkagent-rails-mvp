@@ -5,7 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,css}\"",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf .next out"
   },
   "dependencies": {
     "next": "^14.1.0",

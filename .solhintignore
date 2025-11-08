@@ -1,0 +1,10 @@
+node_modules/
+cache/
+out/
+artifacts/
+build/
+dist/
+coverage/
+lib/
+test/
+*.t.sol

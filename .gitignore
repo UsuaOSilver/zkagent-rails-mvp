@@ -51,7 +51,18 @@ coverage/
 .secret
 secrets/
 
-# Documentation (exclude all .md except README.md)
-*.md
+# Documentation
+.md
+# Include important project documentation
 !README.md
-!*/README.md
+*/README.md
+PITCH.md
+!THREATMODEL.md
+CONTRIBUTING.md
+!DESIGN.md
+SUBMISSION_CHECKLIST.md
+*_IMPROVEMENTS*.md
+*_RESULTS*.md
+*_PLAN*.md
+*_REPORT*.md
+*_COMPLETE*.md

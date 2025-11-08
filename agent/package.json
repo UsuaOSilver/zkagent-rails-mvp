@@ -1,16 +1,47 @@
 {
-  "name": "agent-runner",
-  "version": "0.1.0",
+  "name": "@zkagent/agent",
+  "version": "1.0.0",
+  "description": "zkAgent Rails - Verifiable AI agent for compliant on-chain payments",
   "type": "module",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "bin": {
+    "zkagent": "./dist/src/cli.js"
+  },
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "start": "node dist/runner.js"
+    "start": "node dist/src/cli.js",
+    "dev": "tsc -p tsconfig.json --watch",
+    "clean": "rm -rf dist",
+    "lint": "eslint src/**/*.ts --fix",
+    "format": "prettier --write \"**/*.{ts,js,json}\"",
+    "typecheck": "tsc --noEmit",
+    "example:basic": "npm run build && node dist/examples/basic-usage.js",
+    "example:advanced": "npm run build && node dist/examples/advanced-usage.js",
+    "cli": "npm run build && node dist/src/cli.js"
   },
+  "keywords": [
+    "agent",
+    "erc-4337",
+    "account-abstraction",
+    "compliance",
+    "paymaster",
+    "attestation",
+    "policy",
+    "risk-assessment"
+  ],
+  "author": "zkAgent Rails Contributors",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^24.10.0",
-    "typescript": "^5.5.4"
+    "typescript": "^5.5.4",
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0"
   },
   "dependencies": {
     "viem": "^2.38.6"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }

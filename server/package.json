@@ -1,15 +1,19 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "zkAgent Rails backend API server",
+  "main": "index.mjs",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.mjs",
+    "dev": "node --watch index.mjs",
+    "lint": "eslint *.mjs --fix",
+    "format": "prettier --write \"**/*.{js,mjs,json}\"",
+    "check": "node --check index.mjs"
   },
-  "keywords": [],
+  "keywords": ["api", "paymaster", "erc-4337"],
   "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^5.1.0",
