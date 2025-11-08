@@ -4,9 +4,7 @@
 [![Foundry](https://img.shields.io/badge/Built%20with-Foundry-FFDB1C.svg)](https://getfoundry.sh/)
 [![Starknet](https://img.shields.io/badge/Starknet-Ready-purple.svg)](https://www.starknet.io/)
 
-**One-liner:** Verifiable AI-to-onchain payments. An ERC-4337-style **Compliance Paymaster** accepts a **verifiable agent attestation** + optional ZK/SSI membership and enforces **policy guards** (allow-listed tokens, spend caps, per-epoch rate limits). A **Dollar Router** normalizes stables to a canonical merchant stable (USDC), and **Merchant Receipts** emit audit-ready logs for compliance. A minimal **Starknet Policy Guard** is included to qualify for Starknet residency.
-
-> This is an MVP scaffold you can deploy *today*. It compiles standalone (no external git deps), but assumes you'll install Foundry/Node/Scarb/Starkli on your machine. See each subfolder README.
+Verifiable AI-to-onchain payments. An ERC-4337-style **Compliance Paymaster** accepts a **verifiable agent attestation** + optional ZK/SSI membership and enforces **policy guards** (allow-listed tokens, spend caps, per-epoch rate limits). A **Dollar Router** normalizes stables to a canonical merchant stable (USDC), and **Merchant Receipts** emit audit-ready logs for compliance. A minimal **Starknet Policy Guard** is included to qualify for Starknet residency.
 
 ## Why zkAgent Rails?
 
@@ -42,7 +40,6 @@ zkagent-rails-mvp/
 - [`server/README.md`](./server/README.md) — Backend API
 - [`starknet/README.md`](./starknet/README.md) — Starknet contracts
 - [`THREATMODEL.md`](./THREATMODEL.md) — Security threat model
-- [`PITCH.md`](./PITCH.md) — Project pitch for residency programs
 
 ## Prerequisites
 
@@ -159,11 +156,6 @@ See [`THREATMODEL.md`](./THREATMODEL.md) for:
 - Invariants
 - Abuse cases & mitigations
 - Audit recommendations
-
-## Contributing
-
-Contributions welcome! Please see [`CONTRIBUTING.md`](./CONTRIBUTING.md) for guidelines.
-
 ## License
 
 MIT License - see [`LICENSE`](./LICENSE) for details.
